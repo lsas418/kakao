@@ -1,0 +1,346 @@
+﻿.layer, .layer .bg {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0
+}
+
+.layer {
+    display: none;
+    position: fixed;
+    z-index: 100
+}
+
+.layer .bg {
+    position: absolute;
+    background: #000;
+    opacity: .3;
+    filter: alpha(opacity=30)
+}
+
+#layer_qr {
+    width: 370px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10
+}
+
+#layer_qr .caption {
+    display: block;
+    width: 370px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: -10px
+}
+
+#img_qr {
+    width: 370px;
+    height: 370px
+}
+
+.copy, .logout, .qr_code, .tms, .tms_resend {
+    width: 90px;
+    height: 90px
+}
+
+/* reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, button {
+    margin: 0;
+    padding: 0
+}
+
+fieldset, img {
+    border: 0 none
+}
+
+dl, ul, ol, menu, li {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+
+input, select, textarea, button {
+    vertical-align: middle
+}
+
+input::-ms-clear {
+    display: none
+}
+
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer
+}
+
+body {
+    background: #fff
+}
+
+body, th, td, input, select, textarea, button {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
+    color: #333
+}
+
+a {
+    color: #333;
+    text-decoration: none
+}
+
+a:active, a:hover {
+    text-decoration: underline
+}
+
+a:active {
+    background-color: transparent
+}
+
+address, caption, cite, code, dfn, em, var {
+    font-style: normal;
+    font-weight: normal
+}
+
+/* global */
+.ir_pm {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px
+}
+
+/* PC용 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir_wa {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%
+}
+
+/* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.ir_caption {
+    overflow: hidden;
+    width: 1px;
+    font-size: 1px;
+    line-height: 0;
+    text-indent: -9999px
+}
+
+/* Table caption에 숨김텍스트를 제공할때 */
+.screen_out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px
+}
+
+/* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+.show {
+    display: block
+}
+
+.hide {
+    display: none
+}
+
+.ico_openchat {
+    display: block;
+    overflow: hidden;
+    background: url('../../img/bridge/pc/ico_openchat-9075d388ac385652ad472dfc293e99bf.png') no-repeat;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px
+}
+
+/* prm_open_chat 공통 영역 */
+.openchat_wrap {
+    min-width: 960px;
+    text-align: center
+}
+
+.openchat_wrap .img_thumb {
+    vertical-align: top
+}
+
+/* 헤더부분 */
+.openchat_wrap .k_head {
+    display: table;
+    width: 100%;
+    height: 460px;
+    background-color: #4EB985;
+    table-layout: fixed
+}
+
+.group_openchat {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%
+}
+
+.group_openchat .tit_openchat {
+    display: block;
+    width: 310px;
+    height: 38px;
+    margin: 0 auto;
+    margin-bottom: 20px
+}
+
+.group_openchat .ico_logo {
+    width: 310px;
+    height: 38px;
+    background-position: 0 0
+}
+
+.group_openchat .tit_room {
+    display: -webkit-box;
+    max-width: 960px;
+    width: 75%;
+    margin: 0 auto;
+    font-family: AppleSDGothicNeo-thin;
+    font-size: 52px;
+    font-weight: lighter;
+    line-height: 62px;
+    color: #fff;
+    word-break: keep-all;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal
+}
+
+.group_openchat .box_joinchat {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.group_openchat .btn_chat {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: 80px;
+    padding: 0 44px;
+    font-family: AppleSDGothicNeo-Medium;
+    font-size: 26px;
+    line-height: 80px;
+    margin: 20px auto 0;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.group_openchat .btn_post {
+    opacity: 0.5
+}
+
+/* 컨텐츠 영역 */
+.openchat_wrap .k_cont {
+    padding-bottom: 220px;
+    background-color: #fff
+}
+
+.openchat_wrap .tit_pcchat {
+    display: block;
+    width: 100%;
+    height: 122px;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 122px
+}
+
+.wrap_menu {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0
+}
+
+.btn_menu {
+    width: 240px;
+    height: 240px
+}
+
+.box_menu {
+    display: block;
+    width: 240px;
+    height: 240px;
+    padding-top: 30px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 27px;
+    color: #555;
+    box-sizing: border-box
+}
+
+.box_menu .ico_openchat {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 10px
+}
+
+.box_menu .ico_linkcopy {
+    background-position: 0 -40px
+}
+
+.box_menu .ico_mobile {
+    background-position: -100px -40px
+}
+
+.box_menu .ico_qrcode {
+    background-position: -200px -40px
+}
+
+.box_menu .ico_pctalk {
+    background-position: -300px -40px
+}
+
+/* 푸터 영역 */
+.link_bnr {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #F7F7F7
+}
+
+.link_bnr:hover {
+    text-decoration: none
+}
+
+.img_click {
+    width: 36px;
+    height: 36px;
+    margin: 0 0 0 20px
+}
+
+.txt_bnr {
+    display: inline-block;
+    font-size: 28px;
+    text-align: left;
+    line-height: 38px;
+    font-family: AppleSDGothicNeo-SemiBold;
+}
