@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.basic-post-gallery { overflow:hidden; line-height:16px; width:100%; }
+.basic-post-gallery .txt-normal { letter-spacing:0; }
+.basic-post-gallery .txt-short { letter-spacing:-1px; padding-right:1px; }
+.basic-post-gallery .post-vicon { position:absolute; left:6px; top:6px; color: #fff; font-size:20px; z-index:1; text-shadow: 1px 1px 1px #000; }
+.basic-post-gallery .post-none { padding:50px 10px; text-align:center; color:#888; }
+.basic-post-gallery .post-row { float:left; overflow:hidden; }
+.basic-post-gallery .post-list { overflow:hidden; }
+.basic-post-gallery .post-image { position:relative; overflow:hidden; padding: 10px 0 20px 0; }
+.basic-post-gallery .post-content { margin:-2px 0px; overflow:hidden; }
+.basic-post-gallery .post-subject { overflow:hidden; letter-spacing:-1px; padding-right:1px; }
+.basic-post-gallery .post-sp { color:#ccc; margin:0px 4px; }
+.basic-post-gallery .post-text a{ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; margin-top:4px; }
+.basic-post-gallery .post-text { margin: 5px 0px; }
+.basic-post-gallery .post-text p { margin:0px; }
+
+.is-pc .ko .basic-post-gallery .post-ko { font-size:11px; }
+
+.basic-post-gallery .post-image .img-item .col-xs-4{ padding: 2px !important; padding-top: 5px !important;}
+.basic-post-gallery .post-image .img-item .box-4 { max-width:100%; }
+.basic-post-gallery .post-image .img-item .box-4 .img-4 { width: 50%; float: left; padding: 1px; }
+
+.basic-post-gallery .post-text p img { width:100%; }
